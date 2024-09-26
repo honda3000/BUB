@@ -36,6 +36,6 @@ document.addEventListener('mousemove', (e) => {
     } else if (x < window.innerWidth / 2 && y >= window.innerHeight / 2) {
         imagen.src = './img/bubdown.png';
     } else {
-        imagen.src = './img/bubup.png';
+        imagen.src = './img/bubdown2.png';
     }
 });

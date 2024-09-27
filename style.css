@@ -21,6 +21,7 @@
     background-attachment: fixed;
     font-family: 
     lemon, sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -116,10 +117,10 @@
   }
 
   .imgCenter{
-    width: 40%;
+    width: 33%;
     margin-top: 35px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 33%;
+    margin-right: 33%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
     
   }
@@ -261,4 +262,25 @@
   font-size: 50px;
 }
 
+.nav{
+  height: 120px;
   
+  display: flex;
+  justify-content: space-between;
+} 
+.nav a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgbutton{
+  width: 30%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+.columna-texto h3{
+  font-size: 40px;
+}
+.columna-texto p{
+  font-size: 30px;
+}

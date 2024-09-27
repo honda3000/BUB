@@ -47,11 +47,11 @@ function copiarTexto() {
   navigator.clipboard.writeText(texto.value)
       .then(() => {
           const boton = document.getElementById('boton-copiar');
-          boton.classList.add('copiado');
-          boton.textContent = 'Copiado!';
+          boton.classList.add('Copied');
+          boton.textContent = 'Copied!';
           setTimeout(() => {
-              boton.classList.remove('copiado');
-              boton.textContent = 'Copiar';
+              boton.classList.remove('Copied');
+              boton.textContent = 'Copy CA';
           }, 2000);
       })
       .catch((err) => {

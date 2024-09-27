@@ -133,6 +133,50 @@
 .imgabout{
   width: 50%;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  animation: float3 12s ease-in-out infinite;
+}
+.imgsocial{
+  width: 70%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  animation: float3 12s ease-in-out infinite;
+}
+
+.social-link {
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  gap: 10px;
+}
+
+.social-link .icon-box {
+  width:  80px;
+  height: 80px;
+  background: var(--action-secondary);
+  border-radius: 50%;
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  font-size:80px;
+}
+.social{
+  width: 100px;
+  color: navy;
+}
+
+
+@keyframes float3 {
+  0% {
+    
+    transform: translatey(-20px) translatex(1px) scale(0.7) rotate(0deg);
+  }
+  50% {
+    
+    transform: translatey(-35px) translatex(5px) scale(0.9) rotate(-10deg);
+  }
+  100% {
+    
+    transform: translatey(-20px) translatex(1px) scale(0.9) rotate(0deg);
+  }
 }
 
   

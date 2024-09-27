@@ -24,11 +24,21 @@
     text-align: center;
     color: navy;
     border-radius: 5px;
+    padding: calc(10vh - 2rem) 0;
+    display: block;
+    margin: 0;
+    
+    
+  }
+
+  h2{
+    max-width: 400px;
+    text-align: center;
+    color: navy;
+    border-radius: 5px;
     padding: calc(50vh - 2rem) 0;
     display: block;
     margin: 0;
-    line-height: 100%;
-    
   }
   
   #bubble_machine {
@@ -80,8 +90,49 @@
 
   .imgCenter{
     width: 40%;
-    margin-top: 150px;
+    margin-top: 60px;
     margin-left: 30%;
     margin-right: 30%;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   }
+
+.seccion {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    
+   margin: 10%;
+    height: 80vh;
+    padding: 20px;
+    
+}
+
+.columna {
+    
+    padding: 20px;
+    
+}
+
+.columna-1 {
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna-2 {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgabout{
+  width: 50%;
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
   

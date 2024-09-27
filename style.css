@@ -24,7 +24,7 @@
     text-align: center;
     color: navy;
     border-radius: 5px;
-    padding: calc(10vh - 2rem) 0;
+    padding: calc(5vh - 1rem) 0;
     display: block;
     margin: 0;
     
@@ -40,11 +40,29 @@
     display: block;
     margin: 0;
   }
+  h3{
+    max-width: 400px;
+    text-align: center;
+    color: navy;
+    border-radius: 5px;
+    padding: calc(10vh - 2rem) 0;
+    display: block;
+    margin: 0;
+  }
+  p{
+    max-width: 400px;
+    text-align: center;
+    color: navy;
+    border-radius: 5px;
+    
+    display: block;
+    margin: 0;
+  }
   
   #bubble_machine {
     position: fixed;
     inset: 0;
-    z-index: 999999;
+    z-index: 900;
     pointer-events: none;
   }
   
@@ -90,7 +108,7 @@
 
   .imgCenter{
     width: 40%;
-    margin-top: 60px;
+    margin-top: 35px;
     margin-left: 30%;
     margin-right: 30%;
     filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
@@ -138,27 +156,14 @@
 }
 .imgsocial{
   width: 70%;
+  margin-left: 15%;
+  margin-right:15% ;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
   animation: float3 12s ease-in-out infinite;
+  z-index: 901;
 }
 
-.social-link {
-  display:         flex;
-  justify-content: center;
-  align-items:     center;
-  gap: 10px;
-}
 
-.social-link .icon-box {
-  width:  80px;
-  height: 80px;
-  background: var(--action-secondary);
-  border-radius: 50%;
-  display:         flex;
-  justify-content: center;
-  align-items:     center;
-  font-size:80px;
-}
 .social{
   width: 100px;
   color: navy;
@@ -178,6 +183,72 @@
     
     transform: translatey(-20px) translatex(1px) scale(0.9) rotate(0deg);
   }
+}
+
+
+.cartas {
+  max-width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.carta {
+  
+  margin-bottom: 20px;
+  padding: 20px;
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.carta:last-child {
+  margin-bottom: 0;
+}
+
+.columna-texto {
+  width: 50%;
+  padding: 20px;
+}
+
+.columna-imagen {
+  width: 50%;
+  padding: 20px;
+}
+
+.columna-imagen img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .cartas {
+      max-width: 80%;
+  }
+  .columna-texto, .columna-imagen {
+      width: 100%;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartas {
+      max-width: 90%;
+  }
+  .columna-texto, .columna-imagen {
+      padding: 5px;
+  }
+}
+
+.imgroad{
+  width: 40%;
+}
+.road{
+  font-size: 50px;
 }
 
   

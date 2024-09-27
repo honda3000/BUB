@@ -39,3 +39,22 @@ document.addEventListener('mousemove', (e) => {
         imagen.src = './img/bubdown2.png';
     }
 });
+
+
+function copiarTexto() {
+  const texto = document.getElementById('texto');
+  texto.select();
+  navigator.clipboard.writeText(texto.value)
+      .then(() => {
+          const boton = document.getElementById('boton-copiar');
+          boton.classList.add('copiado');
+          boton.textContent = 'Copiado!';
+          setTimeout(() => {
+              boton.classList.remove('copiado');
+              boton.textContent = 'Copiar';
+          }, 2000);
+      })
+      .catch((err) => {
+          console.error('Error al copiar texto:', err);
+      });
+}
